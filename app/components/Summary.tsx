@@ -1,5 +1,5 @@
 import React from 'react'
-import ScoreGuage from './ScoreGuage'
+import ScoreGuage from './ScoreGauge'
 import ScoreBadge from './ScoreBadge';
 
 const Category = ({ title, score }: { title: string; score: number }) => {
