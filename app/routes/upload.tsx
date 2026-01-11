@@ -1,5 +1,3 @@
-import { log } from 'console';
-import { s } from 'node_modules/react-router/dist/development/index-react-server-client-IoJGLOqV.mjs';
 import {type FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router';
 import FileUploader from '~/components/FileUploader';
