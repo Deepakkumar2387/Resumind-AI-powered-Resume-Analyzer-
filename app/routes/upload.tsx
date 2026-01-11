@@ -53,7 +53,7 @@ const upload = () => {
             prepareInstructions({ jobTitle, jobDescription })
         )
         if(!feedback) return setStatusText('Error: Failed to analyze resume.');
-        const feedbackText = typeof feedback.messagge.content === 'string' 
+        const feedbackText = typeof feedback.message.content === 'string' 
         ? feedback.message.content
         : feedback.message.content[0].text;
 
@@ -62,6 +62,7 @@ const upload = () => {
 
         setStatusText('Analysis complete! Redirecting...');
         console.log(data);
+        navigate(`/resume/${uuid}`);
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
