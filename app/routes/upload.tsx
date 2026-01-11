@@ -108,7 +108,7 @@ const Upload = () => {
                         </div>
                         <div className='form-div'>
                             <label htmlFor="job-description">Job Description</label>
-                            <input type="text" name='job-description' placeholder='Job Description' id='job-description'/>
+                            <textarea rows={5} name='job-description' placeholder='Job Description' id='job-description'/>
                         </div>
                         <div className='form-div'>
                             <label htmlFor="uploader">Upload Resume</label>
